@@ -343,7 +343,7 @@ PrintVials(vials, numvials);
 
 	if (Solver(vials, numvials, &movelist))
 	{
-		printf("Solution found! %ld moves!\n", movelist.count);
+		printf("Solution found in %zu moves!\nPress Enter to iterate though move list.\n", movelist.count);
 		PrintMoveList(movelist);
 	}
 	else printf("No solutions found\n");
